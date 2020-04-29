@@ -12,5 +12,5 @@
 A install path is defined the variable 'INSTALL_PATH' in Makefile
 ```
 $ make download
-$ make INSTALL_PATH=$(PWD)
+$ make INSTALL_PATH=${PWD}/local
 ```

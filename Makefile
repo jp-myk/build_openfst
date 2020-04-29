@@ -20,7 +20,7 @@ download:
 	wget http://www.openfst.org/twiki/pub/GRM/ThraxDownload/thrax-1.2.9.tar.gz
 	wget http://www.openfst.org/twiki/pub/GRM/NGramDownload/opengrm-ngram-1.3.4.tar.gz
 
-build_openfst:$(INSTALL_PATH)/lib/libfst.a
+build_openfst:
 	cd $(OPENFST_PATH) && ./configure --prefix=$(INSTALL_PATH) \
 	 --enable-compact-fsts --enable-const-fsts --enable-far \
 	 --enable-looolahead-fsts --enable-pdt --enable-mpdt \
